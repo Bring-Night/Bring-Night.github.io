@@ -11,7 +11,7 @@
     
     
     
-    <meta name="keywords" content="Life, ARIA, Hexo">
+    <meta name="keywords" content="ZHY, zhy, github, bring-night, 博客">
     
     
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
@@ -67,18 +67,6 @@
     <script defer src="/js/busuanzi.pure.mini.js"></script>
     
     
-    <script defer type="text/javascript" src="/js/search.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-      var searchPath = "search.xml";
-      if (searchPath.length === 0) {
-        searchPath = "search.xml";
-      }
-      var path = "/" + searchPath;
-      searchFunc(path, "search-input", "search-result");
-    });
-    </script>
-    
     
     <script defer type="text/javascript" src="/js/index.js"></script>
     
@@ -108,6 +96,12 @@
         
         <li role="menuitem"><a href="/archives/">归档</a></li>
         
+        <li role="menuitem"><a href="/categories/">分类</a></li>
+        
+        <li role="menuitem"><a href="/tags/">标签</a></li>
+        
+        <li role="menuitem"><a href="/about/">关于</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -121,7 +115,7 @@
             
 <div id="post" class="page">
   
-  <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
+  <article class="article post card animate" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-block">
       <link itemprop="mainEntityOfPage" href="https://bring-night.github.io/2018/11/16/你好，HEXO/">
       <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -154,6 +148,29 @@
   </article>
   
   
+<div class="reward" id="reward">
+  <p>来都来了，滑倒最下面，你不考虑扫一下么？！！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;" aria-hidden="true">
+    
+    <div id="wechat">
+      <img id="wechat_qr" src="/images/WeChatPay.png" alt="微信支付">
+      <span>微信支付</span>
+    </div>
+    
+    
+    <div id="alipay">
+      <img id="alipay_qr" src="/images/AliPay.png" alt="支付宝">
+      <span>支付宝</span>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+  
+  
   <nav class="page-nav">
     <div class="page-nav-next page-nav-item">
       
@@ -176,13 +193,6 @@
           
 <aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
   
-  <div class="search">
-    <div class="form-group">
-      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control">
-    </div>
-  </div>
-  <div class="search-result-box" id="search-result"></div>
-  
   
 <div class="info sidebar-item" id="info">
   
@@ -198,6 +208,22 @@
     </div>
     
     
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="categories-count">
+      <div class="site-count-title">分类</div>
+      <div><a href="/categories/">0</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="tags-count">
+      <div class="site-count-title">标签</div>
+      <div><a href="/tags/">1</a></div>
+    </div>
     
   </div>
   
@@ -216,11 +242,13 @@
       <div><i class="far fa-address-card"></i>社交链接<p></p></div>
       <ul>
         
-        <li><i class="fas fa-envelope"></i><a href="mailto:youremail@youremailhost" target="_blank">E-Mail</a></li>
+        <li><i class="fas fa-envelope"></i><a href="mailto:810647226@qq.com" target="_blank">QQ-Mail</a></li>
         
-        <li><i class="fab fa-github"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
+        <li><i class="fab fa-github"></i><a href="https://github.com/Bring-Night" target="_blank">Bring-Night</a></li>
         
-        <li><i class="fab fa-weibo"></i><a href="https://weibo.com/" target="_blank">Weibo</a></li>
+        <li><i class="fab fa-weibo"></i><a href="https://weibo.com/u/2721377801?is_all=1" target="_blank">愛新仔锝洋仔</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="https://www.cnblogs.com/foriou/" target="_blank">保命晓号-博客园</a></li>
         
       </ul>
     </div>
@@ -231,11 +259,11 @@
       <div><i class="fas fa-link"></i>友情链接</div>
       <ul>
         
-        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
+        <li><i class="fas fa-link"></i><a href="https://www.baidu.com/" target="_blank">百度</a></li>
         
-        <li><i class="fas fa-link"></i><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
+        <li><i class="fas fa-link"></i><a href="https://hexo.io/zh-cn/" target="_blank">HEXO</a></li>
         
-        <li><i class="fas fa-link"></i><a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a></li>
+        <li><i class="fas fa-link"></i><a href="https://www.cnblogs.com/foriou/" target="_blank">博客园</a></li>
         
       </ul>
     </div>
@@ -257,7 +285,7 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="copyright">
-          <span class="author">ZHY</span><span class="year"><i class="far fa-copyright"></i>2018</span>
+          <span class="author">ZHY</span><span class="year"><i class="far fa-copyright"></i>二〇一八 - 2018</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
         </div>
         
         <div class="busuanzi">
